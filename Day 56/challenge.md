@@ -1,22 +1,6 @@
 #### Day 56: Rendering HTML/Static Files and Name Card Project
 **Challenge:** Create a Flask web application that serves HTML and static files, including a personal name card page.
 
-```python
-from flask import Flask, render_template
-
-app = Flask(__name__)
-
-@app.route('/')
-def home():
-    return render_template('index.html')
-
-@app.route('/card')
-def card():
-    return render_template('card.html')
-
-if __name__ == '__main__':
-    app.run(debug=True)
-```
 
 ```html
 <!-- templates/index.html -->
